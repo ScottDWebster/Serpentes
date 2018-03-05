@@ -1,4 +1,4 @@
-# Serpentes.vim
+# Serpentes
 ### A simple Vim plugin for executing Python code from vim.
 
 This simple plugin add several functions to give the user various methods to execute Python code that is being edited.
