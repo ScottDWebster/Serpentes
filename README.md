@@ -18,6 +18,9 @@ This simple plugin add several functions to give the user various methods to exe
   - 'i' runs IdleRun().
   - 't' runs ThonnyRun().
   - 'g' runs GUIRun().
+
+#### Installation:
+Clone into your ~/.vim/pack (%USERPROFILE%\vimfiles on windows) directory (create the pack directoty if it doesn't already exist).
   
   Serpentes.vim only supports Vim 8 and later (for asynchronous execution).
   Serpentes.vim currently only supports Windows, but macOS and Linux support are expected.
