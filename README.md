@@ -23,6 +23,7 @@ This simple plugin add several functions to give the user various methods to exe
 Clone into your ~/.vim/pack (%USERPROFILE%\vimfiles\pack on windows) directory (create the pack directoty if it doesn't already exist).
   
   Serpentes.vim only supports Vim 8 and later (for asynchronous execution).
+
   Serpentes.vim currently only supports Windows as it makes use of a Windows only feature. I hope to find a way to accomplish the same thing in a cross-platform manner in the future.
 
 
