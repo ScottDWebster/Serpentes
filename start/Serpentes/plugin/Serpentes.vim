@@ -2,9 +2,6 @@
 " Vim plugin for running python programs/scripts "
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-"	Set the location of thonny
-"	(haven't figured out how to use this yet)
-
 :amenu <silent> Ser&pentes.cdFile&Dir :call CdFileDir()<CR>
 :amenu <silent> Ser&pentes.&PyRun :call PyRun()<CR>
 :amenu <silent> Ser&pentes.&IdleRun :call IdleRun()<CR>
@@ -33,7 +30,7 @@
 :			echom "Requires Vim version 8 or higher"
 :		endif
 :	else
-:		echom "Not configured for this OS"
+:		echom "Not compatible with this OS"
 :	endif
 :endfunction
 
@@ -45,13 +42,13 @@
 "	Run the current python file via idle asynchronously
 :	if has('win16') || has('win32') || has('win64')
 :		if v:version >= 800
-:			silent !start C:\bin\Anaconda3\pythonw.exe
-					\ C:\bin\Anaconda3\Scripts\idle-script.py -r %
+:			silent !start C:\bin\Python37-32\pythonw.exe
+					\ C:\bin\Anaconda3\Lib\idlelib\idle.pyw -r %
 :		else
 :			echom "Requires Vim version 8 or higher"
 :		endif
 :	else
-:		echom "Not configured for this OS"
+:		echom "Not compatible with this OS"
 :	endif
 :endfunction
 
@@ -68,7 +65,7 @@
 :			echom "Requires Vim version 8 or higher"
 :		endif
 :	else
-:		echom "Not configured for this OS"
+:		echom "Not compatible with this OS"
 :	endif
 :	redraw
 :endfunction
@@ -81,11 +78,11 @@
 "	Run the current python file directly asynchronously
 :	if has('win16') || has('win32') || has('win64')
 :		if v:version >= 800
-:			silent !start C:\bin\Anaconda3\pythonw.exe %
+:			silent !start C:\bin\Python37-32\pythonw.exe %
 :		else
 :			echom "Requires Vim version 8 or higher"
 :		endif
 :	else
-:		echom "Not configured for this OS"
+:		echom "Not compatible with this OS"
 :	endif
 :endfunction
